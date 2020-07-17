@@ -111,13 +111,18 @@
       <h2>Mi Cuenta</h2>
       <div class="row p-3 mt-4" id="shadow">
         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-          <form action="" class="formulario">
+          <form action="login.php" method="POST" name="login" class="formulario">
             <h4 class="formulario__titulo">ACCEDER</h4>
               <div class="contenedor-inputs">
-                <label class="formulario__label">Nombre de usuario o correo electrónico <em>*</em></label><br>
-                <input class="formulario__input" type="text" required><br>
+              <?php
+		              if(isset($_GET['error']) && $_GET['error']==true){
+			                print("<h4>Error: Nombre de usuario o contraseña invalidos</h4>");
+		              } 
+		          ?>
+                <label class="formulario__label">Nombre de usuario<em>*</em></label><br>
+                <input class="formulario__input" name="username" type="text" required><br>
                 <label class="formulario__label">Contraseña <em>*</em></label><br>
-                <input class="formulario__input" type="password" required><br>
+                <input class="formulario__input" name="contraseña" type="password" required><br>
               </div>
                 <input class="formulario-submit" type="submit"  value="Continuar"><br><br><br>
                 <label class="formulario__label">Tus datos personales se utilizarán para respaldar tu experiencia en este sitio web, para administrar el acceso a tu cuenta y para otros fines descritos en nuestra política de privacidad.</label><br><br>
