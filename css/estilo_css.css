@@ -92,6 +92,7 @@ div.card h5 button.btn{
 
 footer{
 	background-color: #1C2833;
+	box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
 }
 
 footer h4, footer h6{color: rgba(255,255,255,1);}
@@ -146,17 +147,34 @@ form button.btn-outline-light a{
 form button.btn-outline-light a:hover{
 	color: #000;
 }
+
 /*Buscador interno*/
+
+header{
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	margin-top: -60px;
+	box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+}
+
+.contenedor{
+	margin-top: 60px;
+
+}
 
 #box-search{
 	position: fixed;
 	top: 48px;
 	width: 200px;
+	max-height: 200px;
+	height: auto;
 	background: rgba(248,248,255,1);
 	z-index: 1;
-	overflow: hidden;
+	overflow-x: hidden;
 	list-style: none;
 	padding: 0px;
+	display: none;
 }
 #box-search li a:hover{
 	border: solid 0px;
@@ -173,6 +191,12 @@ form button.btn-outline-light a:hover{
 	width: 200px;
 	padding: 8px 10px;
 	text-decoration:none;
+}
+
+#input_search{
+	display: none;
+	z-index: 1;
+	transition: all 1200ms;
 }
 
 /*        ANIMACIONES        */

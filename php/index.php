@@ -18,7 +18,7 @@
 <body >
     <header>
         <nav class="navbar navbar-expand-md navbar-light" style="background-color: #e3f2fd;">
-        <a href="#"><img class="not" src="../imagenes/logo_luxury.jpg" width="80px" style="border-radius: 150px"></a> 
+        <a href="index.php"><img class="not" src="../imagenes/logo_luxury.jpg" width="80px" style="border-radius: 150px"></a> 
           <a class="navbar-brand py-0 ml-3 mr-5" href="index.php">LUXURY STORE</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,9 +28,6 @@
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
                 <a class="nav-link" href="index.php">Home<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Offers">Promociones</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -77,60 +74,37 @@
             </ul>
 
             <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="¿Qué desea buscar?" aria-label="Search" style="background-color: #F8F8FF;">
+              <input id="input_search" class="form-control mr-sm-2" type="search" placeholder="¿Qué desea buscar?" aria-label="Search" style="background-color: #F8F8FF;">
               <ul id="box-search">
-                <li><a href=""><img class="not" src="../iconos/magnifying-glass.png" width="10px">HTML</a></li>
-                <li><a href=""><img class="not" src="../iconos/magnifying-glass.png" width="10px">CSS</a></li>
-                <li><a href=""><img class="not" src="../iconos/magnifying-glass.png" width="10px">JAVA</a></li>
-                <li><a href=""><img class="not" src="../iconos/magnifying-glass.png" width="10px">PHP</a></li>
-                <li><a href=""><img class="not" src="../iconos/magnifying-glass.png" width="10px">C++</a></li>
-                <li><a href=""><img class="not" src="../iconos/magnifying-glass.png" width="10px">PYTHON</a></li>
+                <li><a href="celulares.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Celulares</a></li>
+                <li><a href="computadores.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Computadores</a></li>
+                <li><a href="consolas.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Consolas</a></li>
+                <li><a href="televisores.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Televisores</a></li>
+                <li><a href="cosmetiqueras.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Cosmetiqueras</a></li>
+                <li><a href="iluminadores.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Iluminadores</a></li>
+                <li><a href="labiales.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Labiales</a></li>
+                <li><a href="pestañinas.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Pestañinas</a></li>
+                <li><a href="polvos.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Polvos</a></li>
+                <li><a href="sombras.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Sombras</a></li>
+                <li><a href="buzos.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Buzos</a></li>
+                <li><a href="camisas.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Camisas</a></li>
+                <li><a href="camisetas.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Camisetas</a></li>
+                <li><a href="jeans.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Jeans</a></li>
+                <li><a href="sudaderas.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Sudaderas</a></li>
+                <li><a href="zapatos.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Zapatos</a></li>
+                <li><a href="accesorios.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Accesorios</a></li>
               </ul>
-              <button class="btn btn-outline-primary my-2 my-sm-0" href="#" type="submit"><img class="not" src="../iconos/magnifying-glass.png" width="20px"></button>
+              <div id="btn_search" class="btn btn-outline-primary my-2 my-sm-0" href="#" type="submit"><img class="not" src="../iconos/magnifying-glass.png" width="20px"></div>
               <!--<button class="btn btn-outline-secondary my-2 my-sm-0 ml-4 mr-2" id="cuenta" type="submit"><a href="#">Mi Cuenta</a></button> -->
               <button class="btn btn-outline-primary my-2 my-sm-0 ml-4 mr-2" id="cuenta" type="submit" ><a href="cuenta.php">Mi Cuenta</a></button>
             </form>
           </div>
         </nav>
-<!-- Popup Login  
-        <div class="overlay" id="overlay">
-          <div class="popup" id="popup">
-            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup">X</a>
-            <h3>LOGIN</h3>
-            <h4>Login with your username and password</h4>
-            <form action="">
-              <div class="contenedor-inputs">
-                <input type="text" placeholder="Username">
-                <input type="password" placeholder="Password">
-              </div>
-              <input type="submit" class="btn-submit" value="Continue">
-            </form>
-          </div>
-        </div> -->
-<!-- Popup Register
-        <div class="overlay" id="overlay2">
-          <div class="popup" id="popup2">
-            <a href="#" id="btn-cerrar-popup2" class="btn-cerrar-popup">X</a>
-            <h3>Register</h3>
-            <h4>¡Sign up for incredible discounts!</h4>
-            <form action="registro.php" method="POST" name="registro">
-              <div class="contenedor-inputs">
-                <input id="nombre" name="nombre" type="text" placeholder="Nombre">
-                <input id="apellido" name="apellido" type="text" placeholder="Apellido">
-                <input id="usuario" name="usuario" type="text" placeholder="Usuario">
-                <input id="email" name="email" type="email" placeholder="Email">
-                <input id="pass" name="pass" type="password" placeholder="Password">
-                <input id="pass2" name="pass2" type="password" placeholder="Repeat Password">
-              </div>
-              <input type="submit" class="btn-submit" value="Sign Up">
-            </form>
-          </div>
-        </div> -->
         <script type="text/javascript" src="../javascript/javascript.js"></script>
         
     </header>
-
-    <div class="container-fluid">
+<div class="contenedor" id="container">
+    <div class="container-fluid" id="bloque">
       <div class="row">  
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
           <div id="carousel-main" class="carousel slide" data-ride="carousel">
@@ -223,7 +197,7 @@
 
     </div>
 
-    
+  </div>  
     
     <footer class="blockquote-footer" >
         <div class="container-fluid" style="background-color: #1C2833;">
