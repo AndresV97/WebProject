@@ -1,4 +1,5 @@
 <?php 
+    session_start();
     require_once "cn.php";
     /*$user = $_POST['username'];
     $pass1 = $_POST['contraseña'];
@@ -27,12 +28,13 @@
             session_start();
             $_SESSION['USUARIO'] = $_POST['username'];
             $_SESSION['auth'] = true;
+            
         }else{
             print("No hay usuarios");
         }
         if(isset($_SESSION['auth']) && $_SESSION['auth'] == true){
             print("Existe");
-            header("Location: index.php");	
+            header("Location: cuenta.php?log=true");	
         }else{
             print("No existe");
             header("Location: cuenta.php?error=true");

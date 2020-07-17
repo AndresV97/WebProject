@@ -1,3 +1,10 @@
+
+<?php 
+  session_start();
+	if(!isset($_SESSION['auth']) || $_SESSION['auth'] == false){
+    header("Location: ../vista/cuenta.php");
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,8 +24,99 @@
 </head>
 <body >
     <header>
-        <nav class="navbar navbar-expand-md navbar-light" style="background-color: #e3f2fd;">
-        <a href="productos.php"><img class="not" src="../imagenes/logo_luxury.jpg" width="80px" style="border-radius: 150px"></a> 
+    <?php 
+
+if(isset($_GET['log'])&& $_GET['log']==false){
+?>
+  <nav class="navbar navbar-expand-md navbar-light" style="background-color: #e3f2fd;">
+  <a href="index.php"><img class="not" src="../imagenes/logo_luxury.jpg" width="80px" style="border-radius: 150px"></a> 
+    <a class="navbar-brand py-0 ml-3 mr-5" href="index.php">LUXURY STORE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="../php/index.php">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+      
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Tecnología
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="celulares.php">Celulares</a>
+            <a class="dropdown-item" href="computadores.php">Computadores</a>
+            <a class="dropdown-item" href="consolas.php">Consolas</a>
+            <a class="dropdown-item" href="televisores.php">Televisores</a>
+
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Maquillaje
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="cosmetiqueras.php">Cosmetiqueras</a>
+            <a class="dropdown-item" href="iluminadores.php">Iluminadores</a>
+            <a class="dropdown-item" href="labiales.php">Labiales</a>
+            <a class="dropdown-item" href="pestañinas.php">Pestañinas</a>
+            <a class="dropdown-item" href="polvos.php">Polvos</a>
+            <a class="dropdown-item" href="sombras.php">Sombras</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Ropa
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="buzos.php">Buzos</a>
+            <a class="dropdown-item" href="camisas.php">Camisas</a>
+            <a class="dropdown-item" href="camisetas.php">Camisetas</a>
+            <a class="dropdown-item" href="jeans.php">Jeans</a>
+            <a class="dropdown-item" href="sudaderas.php">Sudaderas</a>
+            <a class="dropdown-item" href="zapatos.php">Zapatos</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="accesorios.php">Accesorios</a>
+          </div>
+        </li>
+      </ul>
+
+      <form class="form-inline my-2 my-lg-0">
+        <input id="input_search" class="form-control mr-sm-2" type="search" placeholder="¿Qué desea buscar?" aria-label="Search" style="background-color: #F8F8FF;">
+        <ul id="box-search">
+          <li><a href="celulares.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Celulares</a></li>
+          <li><a href="computadores.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Computadores</a></li>
+          <li><a href="consolas.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Consolas</a></li>
+          <li><a href="televisores.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Televisores</a></li>
+          <li><a href="cosmetiqueras.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Cosmetiqueras</a></li>
+          <li><a href="iluminadores.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Iluminadores</a></li>
+          <li><a href="labiales.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Labiales</a></li>
+          <li><a href="pestañinas.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Pestañinas</a></li>
+          <li><a href="polvos.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Polvos</a></li>
+          <li><a href="sombras.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Sombras</a></li>
+          <li><a href="buzos.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Buzos</a></li>
+          <li><a href="camisas.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Camisas</a></li>
+          <li><a href="camisetas.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Camisetas</a></li>
+          <li><a href="jeans.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Jeans</a></li>
+          <li><a href="sudaderas.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Sudaderas</a></li>
+          <li><a href="zapatos.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Zapatos</a></li>
+          <li><a href="accesorios.php"><img class="not" src="../iconos/magnifying-glass.png" width="10px">Accesorios</a></li>
+        </ul>
+        <div id="btn_search" class="btn btn-outline-primary my-2 my-sm-0" href="#" type="submit"><img class="not" src="../iconos/magnifying-glass.png" width="20px"></div>
+        <!--<button class="btn btn-outline-secondary my-2 my-sm-0 ml-4 mr-2" id="cuenta" type="submit"><a href="#">Mi Cuenta</a></button> -->
+        <button class="btn btn-outline-primary my-2 my-sm-0 ml-4 mr-2" id="cuenta" type="submit" ><a href="cuenta.php">Mi Cuenta</a></button>
+      </form>
+    </div>
+  </nav>
+<?php 
+  }else{
+?>
+      <nav class="navbar navbar-expand-md navbar-light" style="background-color: #e3f2fd;">
+        <a href="index.php"><img class="not" src="../imagenes/logo_luxury.jpg" width="80px" style="border-radius: 150px"></a> 
           <a class="navbar-brand py-0 ml-3 mr-5" href="index.php">LUXURY STORE</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -30,6 +128,7 @@
                 <a class="nav-link" href="index.php">Home<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item dropdown">
+            
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Tecnología
                 </a>
@@ -96,10 +195,14 @@
               </ul>
               <div id="btn_search" class="btn btn-outline-primary my-2 my-sm-0" href="#" type="submit"><img class="not" src="../iconos/magnifying-glass.png" width="20px"></div>
               <!--<button class="btn btn-outline-secondary my-2 my-sm-0 ml-4 mr-2" id="cuenta" type="submit"><a href="#">Mi Cuenta</a></button> -->
-              <button class="btn btn-outline-primary my-2 my-sm-0 ml-4 mr-2" id="cuenta" type="submit" ><a href="cuenta.php">Mi Cuenta</a></button>
+              <?php echo $_SESSION['USUARIO']?>
+              <button class="btn btn-outline-warning my-2 my-sm-0 ml-4 mr-2" id="cuenta" type="submit" ><a href="salir.php">Salir</a></button>
             </form>
           </div>
         </nav>
+<?php 
+    }
+?>
         <script type="text/javascript" src="../javascript/javascript.js"></script>
         
     </header>
@@ -124,7 +227,7 @@
                 <label class="formulario__label">Contraseña <em>*</em></label><br>
                 <input class="formulario__input" name="contraseña" type="password" required><br>
               </div>
-                <input class="formulario-submit" type="submit"  value="Continuar"><br><br><br>
+                <input class="formulario-submit" type="submit" name="login"  value="Continuar"><br><br><br>
                 <label class="formulario__label">Tus datos personales se utilizarán para respaldar tu experiencia en este sitio web, para administrar el acceso a tu cuenta y para otros fines descritos en nuestra política de privacidad.</label><br><br>
 
           </form>
@@ -224,3 +327,4 @@
 
   </body>
   </html>
+  
