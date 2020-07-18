@@ -260,3 +260,11 @@ header {
 #btn_search {
     margin-right: 20px;
 }
+
+.btnP {
+    color: #181717;
+}
+
+.btnP:hover {
+    color: #eff3ef;
+}
