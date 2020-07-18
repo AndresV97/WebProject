@@ -324,9 +324,9 @@ if(isset($_GET['log'])&& $_GET['log']==false){
                     <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
                     <br><br>
                       <h4>MI CUENTA</h4>
-                      <p><a href="cuenta.php">Contacto</a>&nbsp &nbsp &nbsp <a href="cuenta.php">Historial de pedidos</a><br>
-                        <a href="cuenta.php">Mi cuenta</a>&nbsp &nbsp &nbsp<a href="cuenta.php">Ingresar</a><br>
-                        <a href="cuenta.php">Políticas de privacidad</a>
+                      <p><a href="../php/cuenta.php">Contacto</a>&nbsp &nbsp &nbsp <a href="../php/cuenta.php">Historial de pedidos</a><br>
+                        <a href="../php/cuenta.php">Mi cuenta</a>&nbsp &nbsp &nbsp<a href="../php/cuenta.php">Ingresar</a><br>
+                        <a href="../php/cuenta.php">Políticas de privacidad</a>
                       </p>  
                     </div>
                     <div class="col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5">

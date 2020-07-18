@@ -332,11 +332,19 @@ if(isset($_GET['log'])&& $_GET['log']==false){
                     </div>
                     <div class="col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5">
                       <br><br>
+                      <h4>MI CUENTA</h4>
+                      <p><a href="../php/cuenta.php">Contacto</a>&nbsp &nbsp &nbsp <a href="../php/cuenta.php">Historial de pedidos</a><br>
+                        <a href="../php/cuenta.php">Mi cuenta</a>&nbsp &nbsp &nbsp<a href="../php/cuenta.php">Ingresar</a><br>
+                        <a href="../php/cuenta.php">Políticas de privacidad</a>
+                      </p>  
+                    </div>
+                    <div class="col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+                      <br><br>
                         <h4>PRINCIPALES CARACTERÍSTICAS</h4>
-                        <p>&nbsp&nbsp<a href="index.php#referencia">ATENCIÓN AL CLIENTE</a><br>
-                           &nbsp&nbsp<a href="index.php#referencia">PAGO SEGURO</a><br>
-                           &nbsp&nbsp<a href="index.php#referencia">AHORRA COMPRANDO</a><br>
-                           &nbsp&nbsp<a href="index.php#referencia">SOMOS SOLIDARIOS</a></p>
+                        <p>&nbsp&nbsp<a href="../php/index.php#referencia">ATENCIÓN AL CLIENTE</a><br>
+                           &nbsp&nbsp<a href="../php/index.php#referencia">PAGO SEGURO</a><br>
+                           &nbsp&nbsp<a href="../php/index.php#referencia">AHORRA COMPRANDO</a><br>
+                           &nbsp&nbsp<a href="../php/index.php#referencia">SOMOS SOLIDARIOS</a></p>
                     </div>
                   
                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
