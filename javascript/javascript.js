@@ -104,7 +104,7 @@ window.onload = function() {
 
     var productos = [];
     switch (pagina) {
-        case '/Trabajo%20Final/vista/celulares.php':
+        case '/WebProject/vista/celulares.php':
             productos[0] = "Samsung Galaxy A50";
             productos[1] = "Samsung Galaxy A20";
             productos[2] = "Samsung Galaxy A10e";
@@ -122,7 +122,7 @@ window.onload = function() {
             productos[14] = "iPhone XR";
             productos[15] = "iPhone 8";
             break;
-        case '/Trabajo%20Final/vista/computadores.php':
+        case '/WebProject/vista/computadores.php':
             productos[0] = "Portátil HP ProBook 440 G7";
             productos[1] = "Portátil HP ZBook 14u G6";
             productos[2] = "Portátil HP ZBook 15V G5";
@@ -136,14 +136,14 @@ window.onload = function() {
             productos[10] = "Portatil Lenovo S145-14api";
             productos[11] = "Portatil Lenovo Y545";
             break;
-        case '/Trabajo%20Final/vista/consolas.php':
+        case '/WebProject/vista/consolas.php':
             productos[0] = "Playstation 3 Super Slim";
             productos[1] = "Consola PlayStation 4";
             productos[2] = "La Playstation 5";
             productos[3] = "Xbox 360 Ultra Slim E 5.0";
             productos[4] = "Consola X-Box One";
             break;
-        case '/Trabajo%20Final/vista/televisores.php':
+        case '/WebProject/vista/televisores.php':
             productos[0] = "Televisor OLED UHD OLED65CXPDA";
             productos[1] = "Televisor OLED UHD OLED65GXPDA";
             productos[2] = "Televisor OLED UHD OLED65BXPDA";
@@ -153,19 +153,19 @@ window.onload = function() {
             productos[6] = "Televisor exclusiv 55 pulgadas 4k ultra hd smart tv";
             productos[7] = "Televisor LED Samsung 50 Pulgadas UHD 4K Smart TV Serie7";
             break;
-        case '/Trabajo%20Final/vista/cosmetiqueras.php':
+        case '/WebProject/vista/cosmetiqueras.php':
             productos[0] = "Cosmetiquera Moda Peluche";
             productos[1] = "Neceser x 3 Rectangular";
             productos[2] = "Neceser x 3 Redondo";
             productos[3] = "Mini Canasta Oro Rosa";
             break;
-        case '/Trabajo%20Final/vista/cosmetiqueras.php':
+        case '/WebProject/vista/cosmetiqueras.php':
             productos[0] = "Cosmetiquera Moda Peluche";
             productos[1] = "Neceser x 3 Rectangular";
             productos[2] = "Neceser x 3 Redondo";
             productos[3] = "Mini Canasta Oro Rosa";
             break;
-        case '/Trabajo%20Final/vista/c.php':
+        case '/WebProject/vista/c.php':
             productos[0] = "Cosmetiquera Moda Peluche";
             productos[1] = "Neceser x 3 Rectangular";
             productos[2] = "Neceser x 3 Redondo";

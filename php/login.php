@@ -23,6 +23,7 @@
     
         $q = "SELECT * FROM usuarios WHERE USUARIO='".$_POST['username']."' AND PASS='".$_POST['contraseña']."'";
         $Users = $mysql->query($q);
+        $datos = mysqli_fetch_array ($Users);
         print($q."<br>");
         if(mysqli_num_rows($Users)!=0){
             session_start();
@@ -36,6 +37,8 @@
         if(isset($_SESSION['auth']) && $_SESSION['auth'] == true&& isset($_POST['login'])){
             print("Existe");
             $_SESSION['log']=true;
+            $_SESSION['EMAIL'] = $datos[5];
+            echo $datos[5];
             header("Location: ../php/index.php");	
         }else{
             print("No existe");

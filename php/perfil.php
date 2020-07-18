@@ -206,57 +206,32 @@ if(isset($_GET['log'])&& $_GET['log']==false){
         
     </header>
 
-  <div class="contenedor" id="container">
+   <div class="contenedor" id="container">
 
     <!-- Formularios -->
-    <div class="container-fluid p-5" id="micuenta">
-      <h2>Mi Cuenta</h2>
+    <div class="container-fluid p-5" id="miperfil">
+      <h2 id="t_perfil">Mi Perfil</h2>
       <div class="row p-3 mt-4" id="shadow">
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-          <form action="login.php" method="POST" name="login" class="formulario">
-            <h4 class="formulario__titulo">ACCEDER</h4>
-              <div class="contenedor-inputs">
-              <?php
-		              if(isset($_GET['error']) && $_GET['error']==true){
-			                print("<h4>Error: Nombre de usuario o contraseña invalidos</h4>");
-		              } 
-		          ?>
-                <label class="formulario__label">Nombre de usuario<em>*</em></label><br>
-                <input class="formulario__input" name="username" type="text" required><br>
-                <label class="formulario__label">Contraseña <em>*</em></label><br>
-                <input class="formulario__input" name="contraseña" type="password" required><br>
-              </div>
-                <input class="formulario-submit" type="submit" name="login"  value="Continuar"><br><br><br>
-                <label class="formulario__label">Tus datos personales se utilizarán para respaldar tu experiencia en este sitio web, para administrar el acceso a tu cuenta y para otros fines descritos en nuestra política de privacidad.</label><br><br>
+        <img class="not" id="user_icon" src="../iconos/user-shape.png">
 
-          </form>
+        
+        <div><br><br>
+          <h4 class="formulario__titulo">Bienvenido <?php echo $_SESSION['USUARIO']; ?></h4><br>
+          <label class=""><em>Informacion general:</em> </label><br>
+
+          <br>
+          <label class=""><em>Tus datos personales se utilizarán para respaldar tu experiencia en este sitio web, para administrar el acceso a tu cuenta y para otros fines descritos en nuestra política de privacidad.</em> </label><br><br></div>
+        
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          
 
         </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-          <form action="registro.php" class="formulario" method="POST" name="registro">
-            <h4 class="formulario__titulo">REGISTRARSE</h4>
-              <div class="contenedor-inputs">
-                <label class="formulario__label">Nombre <em>*</em></label>
-                <input class="formulario__input" id="nombre" name="nombre" type="text" required><br>
-                <label class="formulario__label">Apellido <em>*</em></label>
-                <input class="formulario__input" id="apellido" name="apellido" type="text" required><br>
-                <label class="formulario__label">Nombre de usuario <em>*</em></label>
-                <input class="formulario__input" id="usuario" name="usuario" type="text" required><br>
-                <label class="formulario__label">Correo electrónico <em>*</em></label>
-                <input class="formulario__input" id="email" name="email" type="email" required><br>
-                <label class="formulario__label">Contraseña <em>*</em></label>
-                <input class="formulario__input" id="pass" name="pass" type="password" required><br>
-                <label class="formulario__label">Repetir contraseña <em>*</em></label>
-                <input class="formulario__input" id="pass2" name="pass2" type="password" required><br>
-              </div>
-              <input type="submit" class="formulario-submit" value="Registrarse">
-            </form>
-        </div>
+
       </div>
     </div> 
 
   </div>
-
 
     <footer class="blockquote-footer" >
         <div class="container-fluid" style="background-color: #1C2833;">

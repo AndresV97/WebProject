@@ -6,8 +6,25 @@
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
 }
 
+#t_perfil{
+    text-align: center;
+}
+
+#miperfil{
+    width: 50%;
+}
+
+#user_icon{
+    width: 20%;
+    height: 10%;
+    margin-left: 235px;
+    margin-top: 20px;
+}
+
+
 .formulario__titulo {
     color: rgba(250, 0, 0, 0.6);
+    text-align: center;
 }
 
 .formulario__input {
@@ -209,52 +226,6 @@ header {
     display: none;
     z-index: 1;
     transition: all 1200ms;
-}
-
-
-/*        ANIMACIONES        */
-
-.popup.active h3 {
-    animation: entradaTitulo 2s ease 0.5s forwards;
-}
-
-.popup.active h4 {
-    animation: entradaSubTitulo 2s ease 0.5s forwards;
-}
-
-.popup.active .contenedor-inputs {
-    animation: entradaInputs 1s ease 1.5s forwards;
-}
-
-@keyframes entradaTitulo {
-    from {
-        transform: translateY(-25px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes entradaSubTitulo {
-    from {
-        transform: translateY(25px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes entradaInputs {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 #btn_search {
