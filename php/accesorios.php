@@ -194,7 +194,7 @@ if(isset($_GET['log'])&& $_GET['log']==false){
               </ul>
               <div id="btn_search" class="btn btn-outline-primary my-2 my-sm-0" href="#" type="submit"><img class="not" src="../iconos/magnifying-glass.png" width="20px"></div>
               <!--<button class="btn btn-outline-secondary my-2 my-sm-0 ml-4 mr-2" id="cuenta" type="submit"><a href="#">Mi Cuenta</a></button> -->
-              <div class="nombrephp"><?php echo $_SESSION['USUARIO']?></div>
+              <div class="nombrephp"><?php echo "  Hola ". $_SESSION['USUARIO']?></div>
               <button class="btn btn-outline-warning my-2 my-sm-0 ml-4 mr-2" id="cuenta" type="submit" ><a href="salir.php">Salir</a></button>
             </form>
           </div>

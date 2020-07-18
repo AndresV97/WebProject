@@ -27,13 +27,15 @@
             session_start();
             $_SESSION['USUARIO'] = $_POST['username'];
             $_SESSION['auth'] = true;
+            //header("Location: cuenta.php?log=true");
             
         }else{
             print("No hay usuarios");
         }
-        if(isset($_SESSION['auth']) && $_SESSION['auth'] == true){
+        if(isset($_SESSION['auth']) && $_SESSION['auth'] == true && isset($_POST['login'])){
             print("Existe");
-            header("Location: cuenta.php?log=true");	
+            $_SESSION['log']=true;
+            header("Location: ../php/index.php");	
         }else{
             print("No existe");
             header("Location: cuenta.php?error=true");
