@@ -16,6 +16,8 @@
         header("Location: login.php");
         exit;
     }*/
+    
+
     function verificarUsuario(){
         print($_POST['username'].":<br>");
     
@@ -23,11 +25,13 @@
     
         $q = "SELECT * FROM usuarios WHERE USUARIO='".$_POST['username']."' AND PASS='".$_POST['contraseña']."'";
         $Users = $mysql->query($q);
+        
         print($q."<br>");
         if(mysqli_num_rows($Users)!=0){
             session_start();
             $_SESSION['USUARIO'] = $_POST['username'];
             $_SESSION['auth'] = true;
+            
             //header("Location: cuenta.php?log=true");
             
         }else{
