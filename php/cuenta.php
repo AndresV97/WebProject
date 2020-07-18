@@ -228,7 +228,7 @@ if(isset($_GET['log'])&& $_GET['log']==false){
                 <input class="formulario__input" name="contraseña" type="password" required><br>
               </div>
                 <input class="formulario-submit" type="submit" name="login"  value="Continuar"><br><br><br>
-                <label class="formulario__label">Tus datos personales se utilizarán para respaldar tu experiencia en este sitio web, para administrar el acceso a tu cuenta y para otros fines descritos en nuestra política de privacidad.</label><br><br>
+                <br><br>
 
           </form>
 
